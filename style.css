@@ -99,3 +99,16 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
+.github-link{
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+}
