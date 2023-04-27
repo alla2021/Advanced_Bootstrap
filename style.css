@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar-brand{
+  font-family: "Dancing Script",sans-serif;
+  font-size: 40px;
+  color:#6c63ff;
+}
+
 .icon-mail:before {
   content: "\ea86";
 }
@@ -46,7 +52,8 @@
 
 body {
   margin: 60px auto;
-  max-width: 800px;
+  max-width: 1000px;
+  font-family: 'Crimson Text', serif;
 }
 
 h1,
@@ -76,6 +83,11 @@ p {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 .navigation-links {
@@ -153,6 +165,48 @@ p {
   align-items: center;
 }
 
+.carousel-item img{
+    max-height: 600px;
+    height: 100%;
+    width: 100%;
+}
+
+.about-row{
+  min-height: 650px;
+}
 
 
+@media (max-width: 767px){
+  .row {
+    display: flex;
+    flex-direction: colomn;
+  }
+
+  h1{
+    font-size: 36px;
+    color: #6c63ff;
+    font-weight: 700;
+  }
+
+  h2,h3{
+    font-size: 26px;
+  }
+
+  .about-row{
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 768px) { 
+  .about-row{
+    min-height: 420px;
+  }
+ }
+
+
+@media (min-width: 992px) { 
+  .about-row{
+    min-height: 580px;
+  }
+ }
 
